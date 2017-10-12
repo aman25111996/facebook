@@ -1,0 +1,23 @@
+body{
+    background-color: #EBEBEE;
+}
+#my-nav {
+    color: white;
+    background-color: #4267B2;
+}
+#my-nav a{
+    color: white;
+}
+.searchbox{
+    min-width: 400px;
+}
+.wrapper section{
+    height: 883px;
+}
+.footer{
+    height: 42px;
+    background-color: #0f0f0f;
+}
+#nav span{
+    color: #0D1325;
+}
