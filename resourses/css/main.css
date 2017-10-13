@@ -14,6 +14,13 @@ body{
 .wrapper section{
     height: 883px;
 }
+.post-section, .ads{
+    height: 700px;
+    overflow: scroll;
+}
+.post-section::-webkit-scrollbar {
+    display: none;
+}
 .footer{
     height: 42px;
     background-color: #0f0f0f;
@@ -35,7 +42,7 @@ body{
     padding: 14px 0 4px 0;
     font-size: 14px;
     font-weight: bold;
-    color: grey;
+    color: #4B4F56;
 }
 .navfont > li > a {
     padding: 0;
@@ -44,7 +51,7 @@ body{
     width: 186px;
     display: block;
     color: #1d2129;
-    font-size: 14px;
+    font-size: 15px;
 }
 #section-a{
 
@@ -52,13 +59,6 @@ body{
     height: 619px;
     width: 180px;
     padding: 15px 0 0 0;
-}
-#section-a span{
-    height: 20px;
-    margin: 4px 6px 0 0;
-    width: 20px;
-    color: #0D1325;
-    font-size: 20px;
 }
 #section-a i{
     height: 20px;
@@ -77,6 +77,35 @@ body{
 }
 .badge b{
     font-weight: 900;
+}
+.fa-calendar-o, .fa-newspaper-o{
+    color: #996699 !important;
+}
+.glyphicon-list-alt{
+    color: grey !important;
+}
+.fa-users, #gamesfeed-color, .fa-address-book-o, .fa-clock-o, .glyphicon-envelope, .fa-hand-o-right, .fa-comment{
+    color: #5D92FF !important;
+}
+.fa-bookmark{
+    color: #F45D72 !important;
+}
+.glyphicon-duplicate, .fa-file-text {
+    color: #F8A058 !important;
+}
+.size{
+    font-size: 13px !important;
+}
+.panel-body .glyphicon {
+    margin-left: 10px;
+    margin-right: 4px;
+}
+.text-post {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.image-post {
+    margin-bottom: 15px;
 }
 
 
