@@ -21,3 +21,62 @@ body{
 #nav span{
     color: #0D1325;
 }
+.shortcuts-dp{
+    margin: 0 6px 0 0;
+    height: 20px;
+    width: 20px;
+}
+.dp {
+    border-radius: 50%;
+    margin: 0 6px 0 0;
+}
+.list-heading{
+    margin: 0 auto;
+    padding: 14px 0 4px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+}
+.navfont > li > a {
+    padding: 0;
+    margin: auto;
+    height: 30px;
+    width: 186px;
+    display: block;
+    color: #1d2129;
+    font-size: 14px;
+}
+#section-a{
+
+    line-height: 25px;
+    height: 619px;
+    width: 180px;
+    padding: 15px 0 0 0;
+}
+#section-a span{
+    height: 20px;
+    margin: 4px 6px 0 0;
+    width: 20px;
+    color: #0D1325;
+    font-size: 20px;
+}
+#section-a i{
+    height: 20px;
+    margin: 4px 6px 0 0;
+    width: 20px;
+    color: #0D1325;
+    font-size: 20px;
+}
+.post-section, .ads{
+    background-color: white;
+    height: 800px;
+}
+.badge{
+    background-color: #E9EBEE !important;
+    color: grey !important;
+}
+.badge b{
+    font-weight: 900;
+}
+
+
