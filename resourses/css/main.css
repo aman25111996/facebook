@@ -117,6 +117,9 @@ body{
     width:61px;
     height:30px;
 }
+.searchbox{
+    min-width: 481px;
+}
 .glyphicon-search{
     font-size: larger;
     color: #676E7B;
@@ -124,10 +127,6 @@ body{
 .glyphicon-user, .glyphicon-globe{
     color: white !important;
 }
-.searchbox{
-    min-width: 461px;
-}
-
 .wrapper section{
     height: 883px;
 }
@@ -256,8 +255,11 @@ body{
     margin-bottom: 15px;
     margin-top: 15px;
 }
+#txtpost{
+    padding: 10px 0 0 5px;
+}
 #imgpost, #img-post{
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 0 !important;
 }
 .image-post {
     margin-bottom: 15px;
