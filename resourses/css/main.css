@@ -507,8 +507,8 @@ border-radius: 0px;
 padding: 0;
 }
 .heading{
-    width: 152px !important;
-    padding: 0;
+    /*width: 142px !important;*/
+    padding: 0 37px 0 0;
     height: 13px;
 }
 .fa-line-chart, .fa-futbol-o, .fa-flask, .fa-university{
