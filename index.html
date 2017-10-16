@@ -16,12 +16,12 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default" id="my-nav">
+ <nav class="navbar navbar-default navbar-fixed-top" id="my-nav">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header" >
+        <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only" id="toogle">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -43,15 +43,15 @@
             <ul class="nav navbar-nav navbar-right" id="nav">
                 <li><a href="https://www.facebook.com/profile.php?id=100009485463623" id="text-1"><img src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p24x24/18813600_1885960701730094_9110729128836272117_n.jpg?oh=bc2c330cd7a9d78d7f9688a95be8061c&oe=5A6D2A0C&__gda__=1513732948_048610ba3535320d55bd8fe140bf48a2" height="24" width="24" border="50%" alt="Person">Aman</a></li>
                 <li><a href="https://www.facebook.com/?ref=tn_tnmn" id="text-2">Home</a></li>
-                <li><a href="#"><span class="notify-badge">1</span><span class="glyphicon glyphicon-user" title="Friend Request"></span></a></li>
-                <li><a href="#"><img src="https://png.icons8.com/facebook-messenger-filled/ios7/25" title="Messages"></a></li>
-                <li><a href="#"><span class="notify-badge">7</span><span class="glyphicon glyphicon-globe" title="Notifications"></span></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-question-sign" title="Quick Help"></span></a></li>
+                <li><a href="#"><span class="notify-badge">1</span><span class="glyphicon glyphicon-user" title="Friend Request"></span><p class="hiden">Friend Request</p></a></li>
+                <li><a href="#"><img src="https://png.icons8.com/facebook-messenger-filled/ios7/25" title="Messages"><p class="hiden">Messagest</p></a></li>
+                <li><a href="#"><span class="notify-badge">7</span><span class="glyphicon glyphicon-globe" title="Notifications"></span><p class="hiden">Notifications</p></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-question-sign" title="Quick Help"></span><p class="hiden">Quick Help</p></a></li>
             </ul>
             </div>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
-</nav>
+ </nav>
 <div class="container" id="main">
     <article class="row wrapper">
         <section class="hidden-xs hidden-sm col-md-3 " id="section-a">
@@ -85,6 +85,35 @@
             </div>
         </section>
         <section class="col-sm-12 col-md-6" id="section-b"><div class="post-section">
+            <div class="panel panel-default box-margin">
+                <div class="panel-heading" id="box-b1">
+                    <div class="media-left" id="box-b1-1">
+                       <span class="span1"><i class="fa fa-pencil" aria-hidden="true"></i> <b>Compose Post</b> <span class="vertical-line"></span></span>
+                       <span class="span2"><i class="fa fa-camera" aria-hidden="true"></i> <b>Photo/Video Album</b> <span class="vertical-line"></span></span>
+                       <span class="span2"><i class="fa fa-video-camera" aria-hidden="true"></i> <b>Live Video</b> </span>
+                    </div>
+                </div>
+                <div class="panel-body" id="top">
+                    <div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-1/p24x24/18813600_1885960701730094_9110729128836272117_n.jpg?oh=bc2c330cd7a9d78d7f9688a95be8061c&oe=5A6D2A0C" height="40" width="40" alt="Person">
+                            </a>
+                        </div>
+                        <div class="media-body text-muted " id="update">
+                            <span class="text-muted" >Share an update Aman </span>
+                        </div>
+                    </div>
+                    <div class="panel-footer background-color">
+                        <span>
+                            <button class="btn1"><span><i class="fa fa-camera" aria-hidden="true"></i> <b>Photo/Video</b></span></button>
+                            <button class="btn2"><span><i class="fa fa-smile-o" aria-hidden="true"></i> <b>Feeling/Activity</b></span></button>
+                            <button class="btn3"><span> <b> • • • </b></span></button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
             <div class="panel panel-default box-margin">
                 <div class="panel-heading background-color" id="txtpost">
                      <div class="media-left">
@@ -271,7 +300,7 @@
                     <div class="text-post ">
                         <p><h4>The debate on the Bearded Guy Vs Clean Shave will always be there. Let's put a end to it. Watch now.</h4></p>
                     </div>
-                <div class="panel-body">
+                <div class="panel-body" id="videopost">
                     <div class="embed-responsive embed-responsive-16by9 image-post">
                         <iframe width="854" height="480" src="https://www.youtube.com/embed/H9K-V7tdl8Q?ecver=1" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -378,6 +407,7 @@
                     </div>
                 </div>
             </div>
+            <div id="loading"></div>
         </div>
         </section>
         <section class="hidden-xs col-md-3" id="section-c">
@@ -387,7 +417,7 @@
                    <div class="media-left">
                      <b class="title">Stories</b>
                    </div>
-                  <div class="panel-body .scrollmenu">
+                  <div class="panel-body" id="box-c1">
                     <div class="media-left border">
                         <a href="#" data-toggle="tooltip" title="Watch Akash's stoty">
                             <img class="media-object" src="https://fb-s-b-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p32x32/19396823_106348426653491_3422272730845144044_n.jpg?oh=6d25b94acbb432ea7c977d11bd3cd863&oe=5A74303E&__gda__=1514066697_6760f6b8e2ab8f19d11150c255209117"alt="Person">
@@ -407,6 +437,11 @@
                           <a href="#" data-toggle="tooltip" title="Watch Alankar's stoty">
                               <img class="media-object" src="https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p32x32/18198595_1885136305144749_8515863674598198552_n.jpg?oh=7102b5035341cbd2188694fd013e348b&oe=5A73C333&__gda__=1517098859_95eb95d64fb6e94837ecb0b083c24a4a" alt="Person">
                           </a><p class="p">Alankar</p>
+                      </div>
+                      <div class="media-left border">
+                          <a href="#" data-toggle="tooltip" title="Watch Mukul's stoty">
+                              <img class="media-object" src="https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-1/c0.40.160.160/p160x160/18922060_448170962207021_5987323793404268338_n.jpg?oh=d506b94e9a05d191926fe63277c8ca5f&oe=5A82DE86&__gda__=1514051299_8b4b518a556b554501796955a6a8b8ed" alt="Person">
+                          </a><p class="p">Mukul</p>
                       </div>
                   </div>
                 </div>
